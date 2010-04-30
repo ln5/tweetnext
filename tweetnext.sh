@@ -18,4 +18,4 @@ fi
 
 r0=`od -A n -N 2 -t d /dev/random`
 r=`expr $PERIOD_MIN + $r0 % $PERIOD_RAND + 1`
-echo "$0 $@" | at now + $r min
+echo "$0 $@" | at now + $r min > /dev/null 2>&1
