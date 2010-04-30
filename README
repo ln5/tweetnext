@@ -18,6 +18,7 @@ Dependencies: sh, curl, od, expr, at, /dev/random
 
 Example of usage:
 
+  PATH=$PATH:/path/to/tweetnext.sh; eport PATH
   echo 'My first tweet.' > first.tweet
   echo 'My second tweet.' > 2nd.tweet
-  ./tweetnext.sh my-twitter-user my-password `pwd` 2 2
+  tweetnext.sh my-twitter-user my-password `pwd` 2 2
