@@ -1,0 +1,23 @@
+A shell script using curl to update the status of a Twitter account.
+
+
+There are three mandatory arguments and two optional:
+
+  tweetnext.sh USER PASSWORD DIRECTORY [PERIOD_MINIMUM [PERIOD_RANDOM]]
+
+PERIOD_MINIMUM is the minimum number of minutes to wait until tweeting
+the next time.
+
+PERIOD_RANDOM is the maximum random number of minutes to add to
+PERIOD_MINIMUM to get the number of minutes to wait before tweeting
+the next time.
+
+
+Dependencies: sh, curl, od, expr, at, /dev/random
+
+
+Example of usage:
+
+  echo 'My first tweet.' > first.tweet
+  echo 'My second tweet.' > 2nd.tweet
+  ./tweetnext.sh my-twitter-user my-password `pwd` 2 2

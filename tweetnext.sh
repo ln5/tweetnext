@@ -1,7 +1,7 @@
 #! /bin/sh
 
-# Tweet the next tweet in DIR using USER and PASSWORD.  Also, schedule
-# ourselves in PERIOD_MIN+rand(PERIOD_RAND) minutes.
+# Tweet the contents of next file in DIR using USER and PASSWORD.
+# Also, schedule ourselves in PERIOD_MIN+rand(PERIOD_RAND) minutes.
 
 USER=$1
 PASSWORD=$2
